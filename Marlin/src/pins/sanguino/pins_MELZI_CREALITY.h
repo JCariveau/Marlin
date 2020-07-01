@@ -67,6 +67,11 @@
   #undef BEEPER_PIN
 #endif
 
+#if ENABLED(FILAMENT_RUNOUT_SENSOR)
+  #define FIL_RUNOUT_PIN                     27
+  #undef BEEPER_PIN
+#endif
+
 #if ENABLED(MINIPANEL)
   #undef DOGLCD_CS
   #define DOGLCD_CS LCD_PINS_RS
